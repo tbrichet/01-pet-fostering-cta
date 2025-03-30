@@ -1,0 +1,114 @@
+/* Style for the CTA banner */
+.cta-banner {
+  background-color: #e0f7fa; /* Light teal background for fallback */
+  background-image: url('img/cta-bg.jpg'); /* Set background image */
+  background-size: cover; /* Ensure the image covers the entire banner */
+  background-position: center; /* Center the image */
+  color: #006064; /* Dark teal text for contrast */
+  text-align: center; /* Center-align text */
+  padding: 50px 20px; /* Add space around the content */
+  font-family: Arial, sans-serif; /* Modern, easy-to-read font */
+  position: relative; /* Enable positioning for overlay */
+}
+
+/* Add a light overlay to the banner */
+.cta-banner::before {
+  content: ''; /* Empty content for the overlay */
+  position: absolute; /* Position overlay over the banner */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire banner */
+  height: 100%;
+  background-color: rgba(224, 247, 250, 0.8); /* Light teal with transparency */
+  z-index: 1; /* Place overlay below text */
+}
+
+/* Ensure text appears above the overlay */
+.cta-banner h1,
+.cta-banner p,
+.cta-banner .cta-button {
+  position: relative; /* Position text above the overlay */
+  z-index: 2;
+}
+
+/* Style for the main heading */
+.cta-banner h1 {
+  font-size: 2.5em; /* Large, prominent heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Style for the description */
+.cta-banner p {
+  font-size: 1.2em; /* Slightly larger text for readability */
+  margin-bottom: 30px; /* Space below the description */
+}
+
+/* Style for the call-to-action button */
+.cta-button {
+  background-color: #0288d1; /* Bright blue button for attention */
+  color: white; /* White text for contrast */
+  text-decoration: none; /* Remove underline */
+  padding: 15px 30px; /* Add space inside the button */
+  border-radius: 5px; /* Slightly rounded corners */
+  font-size: 1em; /* Readable button text */
+  display: inline-block; /* Ensure proper button appearance */
+}
+
+/* Add hover effect for the button */
+.cta-button:hover {
+  background-color: #01579b; /* Darker blue for hover effect */
+}
+
+/* Style for the site header */
+.site-header {
+  background-color: #006064; /* Dark teal background for contrast */
+  color: white; /* White text for readability */
+  text-align: center; /* Center-align text */
+  padding: 20px 0; /* Add space around the header */
+  font-family: Arial, sans-serif; /* Consistent font with the banner */
+}
+
+/* Style for the site name */
+.site-header h1 {
+  font-size: 1.8em; /* Slightly smaller than the CTA heading */
+  margin: 0; /* Remove default margin */
+}
+
+/* Style for the info section */
+.info-section {
+  display: table; /* Use table layout for simple column alignment */
+  width: 100%; /* Full width of the page */
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 40px auto; /* Center the section on the page */
+  text-align: center; /* Center-align text */
+  font-family: Arial, sans-serif; /* Consistent font */
+  vertical-align: middle; /* Vertically align content */
+}
+
+/* Style for the image */
+.info-section img {
+  display: table-cell; /* Align image in one column */
+  width: 50%; /* Half the width of the section */
+  vertical-align: middle; /* Vertically align with text */
+}
+
+/* Style for the text */
+.info-section .info-text {
+  display: table-cell; /* Align text in the other column */
+  width: 50%; /* Half the width of the section */
+  padding: 20px; /* Add space around the text */
+  color: #006064; /* Dark teal text for consistency */
+  vertical-align: middle; /* Vertically align with the image */
+}
+
+/* Style for the heading in the info section */
+.info-section h2 {
+  font-size: 1.8em; /* Slightly smaller than the banner heading */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+/* Style for the paragraph in the info section */
+.info-section p {
+  font-size: 1.1em; /* Slightly larger text for readability */
+  line-height: 1.5; /* Improve readability with line spacing */
+}
